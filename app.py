@@ -23,8 +23,8 @@ CORS(app, origins=["http://localhost:3000"], methods=["GET", "POST", "PUT", "DEL
 
 # Initialize Firebase Admin SDK
 try:
-    # Initialize Firebase with service account key
-    cred = credentials.Certificate('serviceAccountKey.json')
+    # Change for Render Deployment:
+    cred = credentials.Certificate('/etc/secrets/serviceAccountKey.json')
     firebase_admin.initialize_app(cred)
     db = firestore.client()
     logger.info("Firebase initialized successfully")
