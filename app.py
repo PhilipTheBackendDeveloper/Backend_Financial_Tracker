@@ -1,6 +1,6 @@
 """
 Finance Tracker Backend - Flask API with Firebase Integration
-Professional Personal Finance Tracker with Enhanced Analytics
+Professional Personal Finance Tracker
 """
 
 from flask import Flask, request, jsonify
